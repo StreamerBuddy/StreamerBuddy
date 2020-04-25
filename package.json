@@ -1,0 +1,23 @@
+{
+  "name": "streamerbuddy",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.16"
+  },
+  "devDependencies": {
+    "electron": "8.2.0",
+    "electron-builder": "^22.4.1",
+    "electron-webpack": "^2.8.2",
+    "electron-webpack-ts": "^4.0.1",
+    "electron-webpack-vue": "^2.4.0",
+    "typescript": "^3.8.3",
+    "vue": "^2.6.11",
+    "webpack": "~4.42.1"
+  }
+}
